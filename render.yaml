@@ -1,0 +1,14 @@
+services:
+  - type: web
+    plan: free
+    runtime: image
+    name: short-video-maker
+    image:
+      url: docker.io/gyoridavid/short-video-maker:latest
+    envVars:
+      - key: 76UfnAKN2IIgB6pk6GTBIXEsFfoIZT3c0gol1WWjruV3GRsQLdrKidCx
+        sync: false
+      - key: LOG_LEVEL
+        value: debug
+      - key: PORT
+        value: 80
